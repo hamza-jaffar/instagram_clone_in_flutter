@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:instagram_clone/Screens/BottomNav/bottomnav.dart';
-import 'package:instagram_clone/Screens/Signup/signupscreen.dart';
+import 'package:instagram_clone/Screens/Login/loginscreen.dart';
 import 'package:instagram_clone/Widgets/uihelper.dart';
 
-class LoginScreen extends StatelessWidget {
+class SignupScreen extends StatelessWidget {
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
+  TextEditingController usernameController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -29,6 +30,13 @@ class LoginScreen extends StatelessWidget {
               toHide: true,
               textinputType: TextInputType.visiblePassword,
             ),
+            SizedBox(height: 15),
+            Uihelper.CustomTextField(
+              controller: usernameController,
+              text: "Username",
+              toHide: true,
+              textinputType: TextInputType.text,
+            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
@@ -42,48 +50,22 @@ class LoginScreen extends StatelessWidget {
               ],
             ),
             SizedBox(height: 10),
-            Uihelper.CustomButton(text: "Login", callback: () {
+            Uihelper.CustomButton(text: "Sign up", callback: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) => BottomNavScreen()));
             }),
-            SizedBox(height: 10),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Uihelper.CustomImage(imgUrl: "facebook.png"),
-                Uihelper.CustomTextButton(
-                  text: "Log in with facebook",
-                  callback: () {},
-                ),
-              ],
-            ),
-            SizedBox(height: 10),
-            SizedBox(
-              width: 343,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Expanded(child: Divider(color: Colors.grey.shade800, thickness: 1)),
-                  Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 8),
-                    child: Text("OR"),
-                  ),
-                  Expanded(child: Divider(color: Colors.grey.shade800, thickness: 1)),
-                ],
-              ),
-            ),
             SizedBox(height: 20),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text("Don't have an account?"),
-                Uihelper.CustomTextButton(text: "Signup", callback: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => SignupScreen()));
+                Text("Already have an account?"),
+                Uihelper.CustomTextButton(text: "Login", callback: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => LoginScreen()));
                 }),
               ],
             ),
           ],
         ),
       ),
-    );
+    );;
   }
 }
