@@ -66,6 +66,27 @@ class Homescreen extends StatelessWidget {
                           title: "Your Story",
                           image: "assets/images/highlight_1.png",
                         ),
+                        const SizedBox(width: 12),
+                        HomeStory(
+                          title: "Your Story",
+                          image: "assets/images/highlight_1.png",
+                          isLive: true,
+                        ),
+                        const SizedBox(width: 12),
+                        HomeStory(
+                          title: "Your Story",
+                          image: "assets/images/highlight_1.png",
+                        ),
+                        const SizedBox(width: 12),
+                        HomeStory(
+                          title: "Your Story",
+                          image: "assets/images/highlight_1.png",
+                        ),
+                        const SizedBox(width: 12),
+                        HomeStory(
+                          title: "Your Story",
+                          image: "assets/images/highlight_1.png",
+                        ),
                       ],
                     ),
                   ),
@@ -173,7 +194,7 @@ class Homescreen extends StatelessWidget {
                                   const SizedBox(width: 10),
                                   Column(
                                     crossAxisAlignment:
-                                    CrossAxisAlignment.start,
+                                        CrossAxisAlignment.start,
                                     children: const [
                                       Text(
                                         "hamza_jaffar",
@@ -254,7 +275,7 @@ class Homescreen extends StatelessWidget {
                                   const SizedBox(width: 10),
                                   Column(
                                     crossAxisAlignment:
-                                    CrossAxisAlignment.start,
+                                        CrossAxisAlignment.start,
                                     children: const [
                                       Text(
                                         "hamza_jaffar",
