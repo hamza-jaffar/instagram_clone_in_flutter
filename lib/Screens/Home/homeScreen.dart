@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:instagram_clone/Screens/DirectMessage/directmessagescreen.dart';
 import 'package:instagram_clone/Widgets/home_story.dart';
 
 class Homescreen extends StatelessWidget {
@@ -25,7 +26,7 @@ class Homescreen extends StatelessWidget {
                         height: 30,
                       ),
                       const SizedBox(width: 8),
-                      Image.asset("assets/images/send_icon.png", height: 30),
+                      IconButton(onPressed: () { Navigator.push(context, MaterialPageRoute(builder: (context) => DirectMessageScreen())); }, icon: Image.asset("assets/images/send_icon.png", height: 30))
                     ],
                   ),
                 ],
