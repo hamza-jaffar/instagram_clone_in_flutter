@@ -88,3 +88,120 @@ final List<Map<String, String>> arrContent = [
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkdPFA6r_IbzQJcyXrKT5TSritv0S_iWwFmw&s",
   },
 ];
+
+final DateTime now = DateTime.now();
+
+final List<Map<String, dynamic>> activityData = [
+  {
+    "profile_pic": "assets/images/profile/profile1.png",
+    "username": "john_doe",
+    "message": "liked your photo",
+    "created_at": now.subtract(const Duration(hours: 2)),
+    "is_following": false,
+  },
+  {
+    "profile_pic": "assets/images/profile/profile2.png",
+    "username": "emma_watson",
+    "message": "started following you",
+    "created_at": now.subtract(const Duration(hours: 5)),
+    "is_following": true,
+  },
+  {
+    "profile_pic": "assets/images/profile/profile3.png",
+    "username": "alex_dev",
+    "message": "commented: Nice shot 🔥",
+    "created_at": now.subtract(const Duration(days: 1)),
+    "is_following": false,
+  },
+  {
+    "profile_pic": "assets/images/profile/profile4.png",
+    "username": "sarah_k",
+    "message": "liked your post",
+    "created_at": now.subtract(const Duration(days: 2)),
+    "is_following": true,
+  },
+  {
+    "profile_pic": "assets/images/profile/profile5.png",
+    "username": "michael_99",
+    "message": "started following you",
+    "created_at": now.subtract(const Duration(days: 3)),
+    "is_following": true,
+  },
+  {
+    "profile_pic": "assets/images/profile/profile6.png",
+    "username": "design_girl",
+    "message": "liked your photo",
+    "created_at": now.subtract(const Duration(days: 4)),
+    "is_following": false,
+  },
+  {
+    "profile_pic": "assets/images/profile/profile7.png",
+    "username": "flutter_dev",
+    "message": "commented: Awesome 🔥",
+    "created_at": now.subtract(const Duration(days: 6)),
+    "is_following": false,
+  },
+  {
+    "profile_pic": "assets/images/profile/profile8.png",
+    "username": "travel_life",
+    "message": "liked your post",
+    "created_at": now.subtract(const Duration(days: 7)),
+    "is_following": true,
+  },
+  {
+    "profile_pic": "assets/images/profile/profile9.png",
+    "username": "ui_ux_master",
+    "message": "started following you",
+    "created_at": now.subtract(const Duration(days: 10)),
+    "is_following": true,
+  },
+  {
+    "profile_pic": "assets/images/profile/profile10.png",
+    "username": "code_daily",
+    "message": "liked your photo",
+    "created_at": now.subtract(const Duration(days: 14)), // 2 weeks
+    "is_following": false,
+  },
+  {
+    "profile_pic": "assets/images/profile/profile11.png",
+    "username": "creative_mind",
+    "message": "commented: Love this ❤️",
+    "created_at": now.subtract(const Duration(days: 18)),
+    "is_following": true,
+  },
+  {
+    "profile_pic": "assets/images/profile/profile12.png",
+    "username": "nature_addict",
+    "message": "liked your post",
+    "created_at": now.subtract(const Duration(days: 21)), // 3 weeks
+    "is_following": false,
+  },
+  {
+    "profile_pic": "assets/images/profile/profile13.png",
+    "username": "daily_vibes",
+    "message": "started following you",
+    "created_at": now.subtract(const Duration(days: 30)), // 1 month
+    "is_following": true,
+  },
+  {
+    "profile_pic": "assets/images/profile/profile14.png",
+    "username": "tech_world",
+    "message": "liked your photo",
+    "created_at": now.subtract(const Duration(days: 40)),
+    "is_following": false,
+  },
+  {
+    "profile_pic": "assets/images/profile/profile15.png",
+    "username": "photo_junkie",
+    "message": "commented: Amazing shot 📸",
+    "created_at": now.subtract(const Duration(days: 50)),
+    "is_following": true,
+  },
+  {
+    "profile_pic": "assets/images/profile/profile16.png",
+    "username": "minimal_design",
+    "message": "liked your post",
+    "created_at": now.subtract(const Duration(days: 60)), // ~2 months
+    "is_following": false,
+  },
+];

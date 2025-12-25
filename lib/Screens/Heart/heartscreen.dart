@@ -25,8 +25,8 @@ class HeartScreen extends StatelessWidget {
                     indicatorColor: Colors.white,
                     indicatorWeight: 0.1,
                     tabs: const [
-                      Tab(text: "Likes"),
                       Tab(text: "Following"),
+                      Tab(text: "You"),
                     ],
                   ),
                 ],
@@ -36,8 +36,8 @@ class HeartScreen extends StatelessWidget {
             Expanded(
               child: TabBarView(
                 children: [
-                  LikeScreen(),
                   FollowingScreen(),
+                  LikeScreen(),
                 ],
               ),
             ),
